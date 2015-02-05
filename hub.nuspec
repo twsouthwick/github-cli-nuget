@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>github-cli</id>
+    <id>github-hub</id>
     <version>2.2.0-rc1</version>
-    <title>Github CLI</title>
+    <title>Hub</title>
     <authors>GitHub</authors>
     <owners>Taylor Southwick</owners>
     <licenseUrl>https://github.com/github/hub/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/github/hub</projectUrl>
+    <projectUrl>https://github.com/twsouthwick/github-cli-nuget</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>hub is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.</description>
     <summary>hub is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.</summary>
     <releaseNotes />
     <copyright>2015</copyright>
-    <tags>github-cli</tags>
+    <tags>github hub</tags>
     <dependencies>
-      <dependency id="git" />
+      <dependency id="git" version="1.7.3" />
     </dependencies>
   </metadata>
 </package>

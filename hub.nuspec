@@ -18,7 +18,7 @@
 		# expands to:
 		$ git clone git://github.com/rtomayko/tilt.git
 
-		hub is best aliased as  git , so you can type  $ git <command>  in the shell and get all the usual  hub  features. See "Aliasing" below.
+		hub is best aliased as  git , so you can type  $ git &lt;command&gt;  in the shell and get all the usual  hub  features.
 	</summary>
     <releaseNotes>
 		This is the first official release of the Go-powered hub. It marks the milestone of rewriting hub in Go by merging in jingweno/gh :tada:.
@@ -31,7 +31,7 @@
 			•Properly parse global git flags: #764 
 			•Fork command on GitHub Enterprise prompts with incorrect hostname: #770 
 			•Fix Windows config file directory issue: #773 
-			•Fix  hub checkout <PULLREQ-URL>  for renamed fork: #776 
+			•Fix  hub checkout &lt;PULLREQ-URL&gt;  for renamed fork: #776 
 			•Compilation on OpenBSD: #779 
 			•Support  hub init -g DIR : #791 
 			•Read title and body by taking into account Windows line endings: #806 

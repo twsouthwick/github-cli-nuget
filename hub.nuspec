@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>github-hub</id>
-    <version>2.2.0-rc1</version>
+    <version>2.2.0</version>
     <title>Hub</title>
     <authors>GitHub</authors>
     <owners>Taylor Southwick</owners>
@@ -10,8 +10,35 @@
     <projectUrl>https://github.com/twsouthwick/github-cli-nuget</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>hub is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.</description>
-    <summary>hub is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.</summary>
-    <releaseNotes />
+    <summary>
+		hub is a command line tool that wraps  git  in order to extend it with extra features and commands that make working with GitHub easier.
+
+		$ hub clone rtomayko/tilt
+
+		# expands to:
+		$ git clone git://github.com/rtomayko/tilt.git
+
+		hub is best aliased as  git , so you can type  $ git <command>  in the shell and get all the usual  hub  features. See "Aliasing" below.
+	</summary>
+    <releaseNotes>
+		This is the first official release of the Go-powered hub. It marks the milestone of rewriting hub in Go by merging in jingweno/gh :tada:.
+
+		On April 2013, gh was started as a hobby project and as a taste of using Go for a command-line tool. Go has proven itself to be a solid solution for a CLI application with the benefit of speed, low memory usage and ease of distribution.
+
+		We learned a lot from the rewrite. One important takeaway was that the hub cucumber specs have played an important role in making sure existing behaviors are not broken. We can't stress enough the value of and show appreciation for the existence of these language independent specs.
+
+		We :heart: this release and hope you'll too. Here's a list of bug fixes since 2.2.0-rc1:
+			•Properly parse global git flags: #764 
+			•Fork command on GitHub Enterprise prompts with incorrect hostname: #770 
+			•Fix Windows config file directory issue: #773 
+			•Fix  hub checkout <PULLREQ-URL>  for renamed fork: #776 
+			•Compilation on OpenBSD: #779 
+			•Support  hub init -g DIR : #791 
+			•Read title and body by taking into account Windows line endings: #806 
+			•Do not insert "--no-ff" for "--squash" for  hub-merge : #807 
+			•Doc improvement on  hub browse : #759 
+			•Bug fixes on help message of  hub issue -l : #750 
+	</releaseNotes>
     <copyright>2015</copyright>
     <tags>github hub</tags>
     <dependencies>

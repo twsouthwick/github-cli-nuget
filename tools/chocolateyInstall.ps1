@@ -1,6 +1,6 @@
 ﻿$packageName = 'github-hub'
-$url = 'https://github.com/github/hub/releases/download/v2.2.0-rc1/hub-windows-386-2.2.0-rc1.tar.gz'
-$url64 = 'https://github.com/github/hub/releases/download/v2.2.0-rc1/hub-windows-amd64-2.2.0-rc1.tar.gz'
+$url = 'https://github.com/github/hub/releases/download/v2.2.0/hub-windows-386-2.2.0.tar.gz'
+$url64 = 'https://github.com/github/hub/releases/download/v2.2.0/hub-windows-amd64-2.2.0.tar.gz'
 
 try {
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

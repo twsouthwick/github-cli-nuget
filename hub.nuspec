@@ -7,7 +7,7 @@
     <authors>GitHub</authors>
     <owners>Taylor Southwick</owners>
     <licenseUrl>https://github.com/github/hub/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/twsouthwick/github-hub-chocolatey</projectUrl>
+    <projectUrl>https://github.com/github/hub</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>hub is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.</description>
     <summary>

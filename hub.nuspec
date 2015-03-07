@@ -3,7 +3,7 @@
   <metadata>
     <id>github-hub</id>
     <version>2.2.0</version>
-    <title>Hub</title>
+    <title>hub</title>
     <authors>GitHub</authors>
     <owners>Taylor Southwick</owners>
     <licenseUrl>https://github.com/github/hub/blob/master/LICENSE</licenseUrl>

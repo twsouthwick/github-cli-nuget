@@ -4,18 +4,12 @@ $url64 = 'https://github.com/github/hub/releases/download/v2.2.1/hub-windows-amd
 
 try {
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-  $chocTempDir = Join-Path $env:TEMP "chocolatey"
-  $tempDir = Join-Path $chocTempDir "$packageName"
-  $file = Join-Path $tempDir "${packageName}Install"
+  $file = Join-Path $installDir "${packageName}.tar.gz"
   
-  $checkSum = "";
-  $checkSum64 = "";
-  $checksumType64 = "";
-
-  Install-ChocolateyZipPackage -packagename $packageName -url "$url" -url64bit "$url64" -unzipLocation $tempDir
-  Get-ChocolateyUnzip -fileFullPath $file -destination "$installDir"
+  Get-ChocolateyWebFile $packageName $file $url $url64
   
-  Write-ChocolateySuccess "$packageName"
+  # File is in tar.gz format so use 7z to extract and decompress
+  Start-Process "cmd" -ArgumentList "/c 7z x `"$file`" -so | 7z x -aoa -si -ttar -o`"$installDir`"" -Wait
 } catch {
   Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
   throw

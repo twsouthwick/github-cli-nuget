@@ -32,4 +32,7 @@
 	  <dependency id="7zip.commandline" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\chocolateyInstall.ps1" target="tools" />
+  </files>
 </package>
